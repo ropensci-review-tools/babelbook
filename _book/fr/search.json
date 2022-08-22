@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.fr.html",
+    "href": "index.fr.html",
+    "title": "babelbook",
+    "section": "",
+    "text": "Ceci est un livre Quarto.\nPour en savoir plus sur Quarto, visitez https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "intro.fr.html",
+    "href": "intro.fr.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "Voir Knuth (1984) pour une discussion plus approfondie de literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. « Literate Programming ». Comput. J. 27 (2): 97‑111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "summary.fr.html",
+    "href": "summary.fr.html",
+    "title": "2  Résumé",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.fr.html",
+    "href": "references.fr.html",
+    "title": "Références",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  }
+]
