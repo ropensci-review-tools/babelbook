@@ -1,0 +1,9 @@
+# Introduction
+
+Ceci est un livre créé à partir de Markdown et de code exécutable.
+
+Voir @knuth84 pour une discussion plus approfondie de _literate programming_.
+
+```{r}
+1 + 1
+```

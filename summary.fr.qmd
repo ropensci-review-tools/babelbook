@@ -1,0 +1,7 @@
+# Résumé
+
+En résumé, ce livre n'a absolument aucun contenu.
+
+```{r}
+1 + 1
+```

@@ -1,0 +1,9 @@
+# Préface {.unnumbered}
+
+Ceci est un livre Quarto.
+
+Pour en savoir plus sur Quarto, visitez <https://quarto.org/docs/books>.
+
+```{r}
+1 + 1
+```
