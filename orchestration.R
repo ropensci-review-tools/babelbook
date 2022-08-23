@@ -1,4 +1,4 @@
-fs::dir_delete("_book")
+if (fs::dir_exists("docs")) fs::dir_delete("docs")
 quarto::quarto_render(as_job = FALSE)
 
 temporary_directory <- withr::local_tempdir()
@@ -9,7 +9,7 @@ config$lang <- "fr"
 config$book$chapters <- gsub("\\.qmd", ".fr.qmd", config$book$chapters)
 yaml::write_yaml(config, file.path(temporary_directory, "babelbook", "_quarto.yml"))
 quarto::quarto_render(file.path(temporary_directory, "babelbook"), as_job = FALSE)
-fs::dir_copy(file.path(temporary_directory, "babelbook", "_book"), file.path("_book", "fr"))
+fs::dir_copy(file.path(temporary_directory, "babelbook", "docs"), file.path("docs", "fr"))
 
 # Add the language switching part
 add_link <- function(path, lang = "en") {
@@ -38,5 +38,5 @@ add_link <- function(path, lang = "en") {
   xml2::write_html(html, path)
 }
 
-purrr::walk(fs::dir_ls("_book", glob = "*.html"), add_link, lang = "fr")
-purrr::walk(fs::dir_ls("_book/fr", glob = "*.html"), add_link, lang = "en")
+purrr::walk(fs::dir_ls("docs", glob = "*.html"), add_link, lang = "fr")
+purrr::walk(fs::dir_ls("docs/fr", glob = "*.html"), add_link, lang = "en")
