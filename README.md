@@ -5,6 +5,7 @@
 <!-- badges: end -->
 
 The goal of babelbook is to try and create the same Quarto HTML book in two languages.
+This is a workaround meant to be used for rOpenSci dev guide... until there is an implementation in Quarto as that one can only be better!
 
 See https://github.com/quarto-dev/quarto-cli/issues/275
 
