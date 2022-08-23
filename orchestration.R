@@ -31,8 +31,13 @@ add_link <- function(path, lang = "en") {
       sidebar,
       "a",
       sprintf("Version in %s", lang),
+      class = "toc-action",
       href = sprintf("/babelbook/%s/%s", lang, new_path)
     )
+    a <- xml2::xml_children(sidebar)[length(xml2::xml_children(sidebar))]
+    xml2::xml_add_parent(a, "p")
+    p <- xml2::xml_children(sidebar)[length(xml2::xml_children(sidebar))]
+    xml2::xml_add_parent(a, "div", class = "action-links")
   }
   
   
