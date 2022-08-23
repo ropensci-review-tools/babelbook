@@ -1,3 +1,4 @@
+
 if (fs::dir_exists("docs")) fs::dir_delete("docs")
 quarto::quarto_render(as_job = FALSE)
 
@@ -22,7 +23,7 @@ add_link <- function(path, lang = "en") {
       sidebar,
       "a",
       sprintf("Version in %s", lang),
-      href = sprintf("/%s", new_path)
+      href = sprintf("/babelbook/%s", new_path)
     )
   } else {
     new_path <- fs::path_ext_set(basename(path), sprintf(".%s.html", lang))
@@ -30,7 +31,7 @@ add_link <- function(path, lang = "en") {
       sidebar,
       "a",
       sprintf("Version in %s", lang),
-      href = sprintf("/%s/%s", lang, new_path)
+      href = sprintf("/babelbook/%s/%s", lang, new_path)
     )
   }
   
