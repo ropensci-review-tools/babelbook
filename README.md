@@ -1,6 +1,8 @@
 
 # babelbook
 
+**Now see [babelquarto](https://github.com/ropensci-review-tools/babelquarto)**
+
 <!-- badges: start -->
 <!-- badges: end -->
 
